@@ -248,10 +248,10 @@ overflow: auto; /* для скролла */
 .fitness {
    background: url('../img/bg.png') 0 0 no-repeat;
   padding: 110px 0px 108px 0px;  /* растягиваем на всю ширину вьюпорта */
-  -moz-background-size: 100%; /* Firefox 3.6+ */
-  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: 100%; /* Opera 9.6+ */
-  background-size: 100%; /* Современные браузеры */
+  -moz-background-size: cover; /* Firefox 3.6+ */
+  -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: cover; /* Opera 9.6+ */
+  background-size: cover; /* Современные браузеры */
 }
 .fitness__body {
 display: flex;
