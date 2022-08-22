@@ -470,3 +470,185 @@ color: #1B1B20;
          padding: 0px 0px 10px 0px;
       }
    }
+
+/*------Section fitmirror----------------------------------------------------*/
+   .fitmirror {
+      background: url('../img/bg-3.png') 0 0 no-repeat;
+  padding: 110px 0px 108px 0px;  /* растягиваем на всю ширину вьюпорта */
+  -moz-background-size: cover; /* Firefox 3.6+ */
+  -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: cover; /* Opera 9.6+ */
+  background-size: cover; /* Современные браузеры */
+   }
+  
+   .fitmirror__part1 {
+   }
+   .fitmirror__image1 {
+      text-align: center;
+   }
+   .fitmirror__image1 img {
+      max-width: 100%;
+   }
+   .fitmirror-introducing {
+      font-size: 20px;
+line-height: 120%;
+text-align: center;
+color: #1B1B20;
+margin: 56px 0px 20px 0px;
+   }
+   .fitmirror__title {
+      font-weight: 700;
+font-size: 56px;
+line-height: 120%;
+text-align: center;
+text-transform: uppercase;
+color: #1B1B20;
+margin: 0px 0px 36px 0px;
+   }
+   .fitmirror__title span {
+      color: #D61FDA;
+   }
+   .fitmirror__text {
+      font-size: 24px;
+line-height: 120%;
+text-align: center;
+color: #626262;
+max-width: 900px;
+text-align: center;
+margin: 0 auto;
+   }
+   .fitmirror__part2 {
+      padding: 150px 0px 150px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .fitmirror__part22 {
+      flex: 0 1 50%;
+      padding: 0px 0px 20px 0px;
+   }
+   .fitmirror__image2 {
+      flex: 0 1 50%;
+      padding: 0px 30px 0px 0px;
+   }
+   .fitmirror__image2 img {
+     width: 100%;
+   }
+
+   .hou_you {
+      padding: 35px 40px 85px 40px;
+      background: linear-gradient(94.9deg, #FFF5DD 1.6%, rgba(170, 86, 254, 0.32) 38.13%, rgba(254, 86, 217, 0.28) 58.65%, rgba(86, 254, 254, 0.28) 99.73%);
+box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.1), inset 10px 10px 60px rgba(255, 255, 255, 0.4);
+border-radius: 20px;
+   }
+   .fitmirror__title {
+   }
+   .hou__you__body {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+   }
+   .hou__you__item {
+      flex: 0 1 33.33%;
+     max-width: 400px;
+   }
+   .hou__you__item:not(:last-child) {
+      margin: 0px 100px 0px 0px;
+   }
+   .hou__you__list {
+
+   }
+   .hou__you__link {
+      list-style-type: disc;
+      list-style-position: outside;
+      line-height: 120%;
+color: #1B1B20;
+   }
+   /*!Адаптив*/
+   @media (max-width:1100px) {
+    
+      .fitmirror__title {
+         font-size: 44px;
+      }
+      .fitmirror__text {
+         font-size: 20px;
+      }
+      .fitmirror__part2 {
+         padding: 60px 0px 60px 0px;
+      }
+      .hou__you__item:not(:last-child) {
+         margin: 0px 60px 0px 0px;
+      }
+   }
+   @media (max-width:910px) {
+      .fitmirror {
+         padding: 40px 0px 0px 0px;
+      }
+      .fitmirror__text {
+         max-width: 400px;
+      }
+      .hou_you {
+         padding: 35px 40px 35px 40px;
+      }
+      .hou__you__item {
+        max-width: 300px;
+      }
+      .fitmirror__title {
+         margin: 0px 0px 20px 0px;
+         font-size: 36px;
+      } 
+      .fitmirror__image1 img {
+         max-height: 650px;
+         max-width: 600px;
+      }
+   }
+   @media (max-width:763px) {
+      .fitmirror__title {
+         font-size: 36px;
+      }
+      .fitmirror__text {
+         font-size: 16px;
+         max-width: 100%;
+      }
+      .fitmirror__part2 {
+         flex-direction: column;
+         padding: 20px 0px 10px 0px;
+      }
+      .fitmirror__image1 img {
+         max-height: 450px;
+         max-width: 400px;
+      }
+      .fitmirror__image2 {
+         padding: 0px 0px 20px 0px;
+      }
+      .fitmirror__image2 img {
+         max-height: 300px;
+         max-width: 300px;
+      }
+      .fitmirror-introducing {
+         margin: 20px 0px 10px 0px;
+      }
+      .hou_you {
+         padding: 25px 10px 25px 10px;
+      }
+      .hou__you__body {
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+      .hou__you__item {
+        max-width: 100%;
+      }
+      .hou__you__item:not(:last-child) {
+         margin: 0px 0px 30px 0px;
+      }
+      .fitmirror__title {
+         margin: 0px 0px 20px 0px;
+         font-size: 36px;
+      } 
+      .hou__you__link {
+         text-align: center;
+         line-height: 140%;
+         list-style-position: inside;
+      }
+   }
