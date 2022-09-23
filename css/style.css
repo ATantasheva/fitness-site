@@ -1095,7 +1095,7 @@ max-width: 80%;
 }
 /*------FOOTER---------*/
 .footer {
-background:url('/img/bg-7.png') 0px center no-repeat, url('/img/bg-footer.svg') 0 0 no-repeat;
+background:url('../img/bg-7.png') 0px center no-repeat, url('../img/bg-footer.svg') 0 0 no-repeat;
    /* растягиваем на всю ширину вьюпорта */
    -moz-background-size: cover;
    /* Firefox 3.6+ */
