@@ -154,6 +154,7 @@ body._lock {
    color: #8B1CFB;
    border: solid 2px #8B1CFB;
    background: #fff;
+  font-size: 14px;
 
 }
 
@@ -795,7 +796,7 @@ body._lock {
 /*------Section supercharge---------*/
 
 .supercharge {
-   background: url('../img/bg-5.png') 0 0 no-repeat;
+   background: url('../img/bg-5.png') 0 center no-repeat;
    padding: 30px 0px 100px 0px;
    /* растягиваем на всю ширину вьюпорта */
    -moz-background-size: cover;
@@ -950,7 +951,7 @@ body._lock {
 
 .calculator {
    padding: 100px 0px 50px 0px;
-   background: url('../img/bg-7.png') 0 0 no-repeat;
+   background: url('../img/bg-7.png') 0 center no-repeat;
    /* растягиваем на всю ширину вьюпорта */
    -moz-background-size: cover;
    /* Firefox 3.6+ */
@@ -1094,7 +1095,7 @@ max-width: 80%;
 }
 /*------FOOTER---------*/
 .footer {
-   background: url('../img/bg-footer.svg') 0 0 no-repeat;
+background:url('/img/bg-7.png') 0px center no-repeat, url('/img/bg-footer.svg') 0 0 no-repeat;
    /* растягиваем на всю ширину вьюпорта */
    -moz-background-size: cover;
    /* Firefox 3.6+ */
@@ -1103,21 +1104,160 @@ max-width: 80%;
    -o-background-size: cover;
    /* Opera 9.6+ */
    background-size: cover;
-   /* Современные браузеры */
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(87.12deg, rgba(134, 61, 255, 0.6) 23.87%, rgba(250, 49, 254, 0.6) 79.89%);
-}
+height: 650px;
 
+}
+.footer__footer {
+
+   position: relative;
+}
 .footer__image {
+   position: absolute;
+   left: 0;
+   top: -30%;
+}
+.footer__image img {
+   max-width: 100%;
+   max-height: 850px;
+}
+.footer__content {
+
+   
 }
 .footer__block {
+ 
+}
+
+.footer__body {
+padding: 170px 0px 0px 0px;
+
 }
 .footer__title {
+   font-weight: 700;
+font-size: 50px;
+line-height: 120%;
+text-transform: uppercase;
+color: #FFFFFF;
+text-align: right;
+margin: 0px 0px 40px 0px;
 }
 .footer__text {
+   font-size: 22px;
+line-height: 120%;
+text-align: right;
+color: #FFFFFF;
+margin: 0px 0px 40px 0px;
+
 }
 .footer__form {
+   margin: 0px 0px 40px 0px;
+   display: flex;
+   align-items: center;
+   text-align: right;
+   justify-content: flex-end;
+}
+
+.input {
+   padding: 16px 196px 16px 20px;
+   border: 1px solid #FFFFFF;
+   border-radius: 30px;
+background-color: transparent;
+}
+.input::placeholder {
+   letter-spacing: 0.08em;
+   font-size: 16px;
+line-height: 120%;
+color: #fff;
 }
 .header__button {
+   max-width: 220px;
 }
 .button__download {
+}
+.footer__form .header__button {
+   margin: 0px 0px 0px 32px;
+}
+/*!Адаптив*/
+@media (max-width:1235px) {
+   .footer {
+      height: 550px;
+   }
+   .footer__image {
+      top: -10%;
+   }
+   .footer__image img {
+      max-height: 650px;
+   }
+}
+@media (max-width:1100px) {
+   .footer {
+      height: 400px;
+   }
+   .footer__image img {
+      max-height: 450px;
+   }
+   .footer__body {
+      padding: 80px 0px 0px 0px;
+      
+      }
+      .footer__title {
+      font-size: 46px;
+      margin: 0px 0px 20px 0px;
+      }
+      .footer__text {
+         font-size: 18px;
+      margin: 0px 0px 20px 0px;
+      }
+}
+@media (max-width:870px) {
+   .footer__title {
+      font-size: 40px;
+      margin: 0px 0px 20px 0px;
+      }
+      .footer__text {
+         font-size: 16px;
+      margin: 0px 0px 20px 0px;
+      }
+      .input {
+         padding: 16px 90px 16px 20px;
+      }
+}
+@media (max-width:763px) {
+   .footer__image {
+      display: none;
+   }
+   .footer__body {
+      padding: 100px 0px 0px 0px;
+      
+      }
+      .footer__title, .footer__text, .footer__form {
+         text-align: center;
+         
+      }
+      .footer__form {
+         justify-content: center;
+        margin: 0px 0px 20px 0px;
+      }
+}
+@media (max-width:500px) {
+   .footer__title {
+      font-size: 32px;
+      margin: 0px 0px 20px 0px;
+      }
+      .footer__text {
+         font-size: 14px;
+      margin: 0px 0px 20px 0px;
+      }
+      .input {
+         padding: 10px;
+      }
+      .input::placeholder {
+         font-size: 12px;
+      }
+}
+@media (max-width:400px) {
+   .button__download {
+      padding: 10px 8px;
+      font-size: 10px;
+   }
 }
